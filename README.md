@@ -19,11 +19,9 @@ Enter Text Here is a progressive web app created using Webpack and various plugi
    - There is no seed data provided for this app
    - Run "npm start" to start the application's connection
    - Go to the url of the application (http//:localhost:3000) and you'll see it running
+   - If you wish to install ETH natively, simply click the install button in the top left and accept the prompt that follows
+   - Should the button be disabled, you can also install the app by clicking the install icon which can be found at the top of your browser, on the far end of the URL search bar (near the Bookmark star)
 
 ## Usage
 
-The app is listening for the editor's content to change. Anytime a letter is typed into the editor, that text gets saved to local storage. As soon as the user changes focus away from the editor (i.e. by clicking outside the app), this will trigger the IndexDB put route to add the new content to our application's storage. Storing this information in IndexDB makes it unique the app and not the browser (like local storage would do). Moreover, this is what allows us to keep the data persistent when the user is offline.
-
-
-
-
+The app is listening for the editor's content to change. Anytime a letter is typed into the editor, that text gets saved to local storage. As soon as the user changes focus away from the editor (i.e. by clicking outside the app), this will trigger the IndexDB put route to add the new content to our application's storage. Storing this information in IndexDB makes it unique the app and not the browser (like local storage would do), which allows us to keep the data persistent when the user is offline.
