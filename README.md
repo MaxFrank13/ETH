@@ -22,4 +22,4 @@ Enter Text Here is a progressive web app created using Webpack and various plugi
 
 ## Usage
 
-The app is listening for the editor's content to change. Anytime a letter is typed into the editor, that text gets saved to local storage. As soon as the user changes focus away from the editor (i.e. by clicking outside the app), this will trigger the IndexDB put route to add the new content to our application's storage. Storing this information in IndexDB makes it unique the app and not the browser (like local storage would do). Moreover, this is what allows us to keep the data persistent when the user is offline.
+The app is listening for the editor's content to change. Anytime a letter is typed into the editor, that text gets saved to local storage. As soon as the user changes focus away from the editor (i.e. by clicking outside the app), this will trigger the IndexDB put route to add the new content to our application's storage. Storing this information in IndexDB makes it unique the app and not the browser (like local storage would do), which allows us to keep the data persistent when the user is offline.
