@@ -30,7 +30,7 @@ module.exports = () => {
         inject: true,
         name: 'Enter Text Here',
         short_name: 'ETH',
-        description: 'ETH: it\'s not what you think',
+        description: 'ETH - it\'s not what you think',
         background_color: '#208a97',
         theme_color: '#208a97',
         start_url: '/',
@@ -39,6 +39,11 @@ module.exports = () => {
           {
             src: path.resolve('src/images/logo.png'),
             sizes: [96, 128, 192, 256, 384, 512],
+            destination: path.join('assets', 'icons'),
+          },
+          {
+            src: path.resolve('favicon.ico'),
+            sizes: [16],
             destination: path.join('assets', 'icons'),
           },
         ],

@@ -20,24 +20,18 @@ export const putDb = async (content) => {
 
   const store = tx.objectStore('jate');
 
-  const getEditor = store.get('content');
-
-  getEditor.onsuccess = () => {
-    const data = getEditor.result;
-
-    data.notified = 'yes';
-
-    const updateEditor = objectStore.put(content);
-
-    console.log("The transaction that originated this request is " + updateEditor.transaction);
-
-    updateEditor.onsuccess = () => {
-      displayData();
-    }
+  const request = store.put({ value: content });
+  const result = await request;
+  request.onsuccess = () => {
+    textDb.getAllEntries();
   }
+  request.onerror = (e) => {
+    console.log('Error adding: '+ e)
+  }
+  console.log('🚀 - data saved to the database', result);
+
 };
 
-// TODO: Add logic for a method that gets all the content from the database
 export const getDb = async () => {
   const textDb = await openDB('jate', 1);
 
@@ -45,11 +39,12 @@ export const getDb = async () => {
 
   const store = tx.objectStore('jate');
 
+  //change get to only get the latest item as a string
   const request = store.getAll();
 
   const result = await request;
   console.log('result.value', result);
-  return result;
+  return result[result.length - 1]?.value;
 };
 
 initdb();
