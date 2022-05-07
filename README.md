@@ -19,6 +19,8 @@ Enter Text Here is a progressive web app created using Webpack and various plugi
    - There is no seed data provided for this app
    - Run "npm start" to start the application's connection
    - Go to the url of the application (http//:localhost:3000) and you'll see it running
+   - If you wish to install ETH natively, simply click the install button in the top left and accept the prompt that follows
+   - Should the button be disabled, you can also install the app by clicking the install icon which can be found at the top of your browser, on the far end of the URL search bar (near the Bookmark star)
 
 ## Usage
 
