@@ -8,7 +8,7 @@ Enter Text Here is a progressive web app created using Webpack and various plugi
 
 ![Screenshot of native application](https://github.com/MaxFrank13/ETH/blob/main/client/src/images/eth-app-photo.PNG)
 
-[ETH: it's not what you think](https://polar-eyrie-98965.herokuapp.com/)
+[ETH: it's not what you think](https://fierce-depths-50691.herokuapp.com/)
 
 ## Installation
 
